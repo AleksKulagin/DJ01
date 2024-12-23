@@ -1,0 +1,66 @@
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        aside {
+            background: linear-gradient(135deg, #6dd5ed, #2193b0);
+            color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+        .content {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+
+
+    <style>
+        .nav-item {
+            transition: transform 1.5s;
+            flex: 1; /* Каждый элемент займет равную долю пространства */
+            text-align: center;
+        }
+
+        .nav-item:hover {
+            transform: translateY(-1px);
+        }
+
+        .navbar-nav {
+            display: flex;
+            flex-direction: row; /* Устанавливаем горизонтальное направление */
+            justify-content: space-around; /* Распределяем элементы с равными интервалами */
+            width: 100%;
+        }
+
+        .nav-link {
+            display: block;
+            padding: 10px 0; /* Добавляем отступы для лучшего внешнего вида */
+        }
+    </style>
+
+
+    <style>
+        .footer-custom {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #ffffff;
+            color: #343a40;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>

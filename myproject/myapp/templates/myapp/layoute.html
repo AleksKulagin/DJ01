@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    {% load static %}
+    <link rel="stylesheet" href=" {%static 'myapp/css/main.css' %}">
+
+    {%  block title %}
+    {%  endblock %}
+</head>
+<body>
+    <aside class="d-flex align-items-center p-4 mb-4">
+        <img src="{% static 'myapp/img/logo.png' %}" alt="логотип" class="logo mr-3" style="width: 100px;">
+        <br>
+        <span class="h5 mb-0">Сайт  - первый Django проект</span>
+    </aside>
+
+    <main class="container">
+        {% include 'myapp/nav.html' %}
+        <div class="content py-4 px-3">
+            {% block content %}
+            {% endblock %}
+        </div>
+        {% include 'myapp/footer.html' %}
+    </main>
+</body>
+</html>

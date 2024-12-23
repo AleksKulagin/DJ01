@@ -1,0 +1,34 @@
+{% extends 'myapp/layoute.html' %}
+
+{% block title %}
+    <title>Test</title>
+{% endblock %}
+
+{% block content %}
+    <body>
+        <h1>Это страница Test</h1>
+
+        <section style="margin-top: 20px; padding: 20px; border: 2px solid #ccc; border-radius: 10px; background-color: #f0f8ff;">
+            <h2>Анекдот про программиста</h2>
+            <p style="font-size: 18px; line-height: 1.5; color: #333;">
+                Программист звонит в библиотеку:
+                <br><br>
+                — Здравствуйте, вы можете помочь мне найти книгу?
+                <br>
+                — Конечно, а какой у нее заголовок?
+                <br>
+                — "Как справиться с ошибками в Java".
+                <br>
+                — Извините, но у нас в каталоге нет такой книги. У нас только "Как справиться с ошибками в JavaScript".
+                <br>
+                — Спасибо, но это не поможет. Я просто хотел уточнить, что JavaScript — это не Java.
+                <br>
+                — Ах, извините, у нас есть ещё книга "Как справиться с ошибками в Python".
+                <br>
+                — Спасибо, но мне нужна книга именно по Java.
+                <br>
+                — Хорошо, а вы пробовали перезагрузить проект? <br>   ---{{caption}}
+            </p>
+        </section>
+    </body>
+{% endblock %}
